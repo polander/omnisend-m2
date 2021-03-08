@@ -2,9 +2,11 @@
 
 ## Overview
 
-[Omnisend](https://www.omnisend.com/) provides you the tools to move your first-time visitors towards making a purchase. Streamline your sales funnel with signup forms, one-off marketing campaigns, and personalized automation through different channels – all in one single platform. Join more than 40,000 eCommerce marketers that have trusted their email and marketing automation to Omnisend. Our platform provides a complete solution for generating more sales and connecting your eCommerce business with potential and existing customers across multiple customer journey touchpoints and channels.
+[Omnisend](https://www.omnisend.com/) enables more than 50,000 eCommerce marketers to increase their sales with highly relevant messaging. Built for nimble, high-growth ecommerce brands, Omnisend is an omnichannel marketing automation platform with fully integrated email, SMS and push notifications as well as the ability to sync audiences with Facebook & Google ads.
 
-After connecting your Magento 2 store to Omnisend, this plugin will automatically sync your customers, orders, carts, and products with your Omnisend account, making it easy to segment your customers, send campaigns, automated personalized emails and use other smart Omnisend features.
+Our omnichannel approach empowers ecommerce brands to build meaningful, personalized messaging that’s tailored to specific audience segments and adapts as shoppers move along their customer journey. The best part? It’s just as easy to start as it is to work with our platform; you’ll find all the top-performing automation workflows, from browse abandonment, cart recovery, to shipping confirmation pre-built for you - and it takes only minutes to build great-looking email templates you can use for these sequences.
+
+Our open-source code for Magento 2 integration will automatically sync your customers, orders, carts and products with your Omnisend account, making it easy for you to start segmenting your customers and sending targeted campaigns together with automated, personalized emails & texts.
 
 ## Installation
 
@@ -14,18 +16,23 @@ After connecting your Magento 2 store to Omnisend, this plugin will automaticall
    - `php bin/magento setup:static-content:deploy`
 3. Login to your Magento backend, go to _Omnisend -> Plugin settings_ and complete connection steps here.
 
-### Features
+### Main Features
 
-- Email and SMS automation workflows: Cart Abandonment, Browse Abandonment, Product Abandonment, Welcome, Order Confirmation and many others
-- Signup forms: Signup Box, various Popups, interactive Wheel of Fortune, Landing Pages
-- Advanced subscriber list segmentation based on various attributes and behavioral data that we collect with Website Tracking
-- Product Recommender
+- Email, SMS and push notifications available for campaigns and automations
+- Pre-built automation workflows for Cart Abandonment, Browse Abandonment, Product Abandonment, Welcome Series, Order Confirmation, and many more
+- Visual, no-code Automation Editor to edit pre-built workflows or create your custom ones
+- Email and SMS signup forms: signup boxes,  pop-ups (including exit-intent), interactive wheel of fortune, landing pages
+- Advanced contact segmentation based on customer lifecycle stages, shopping history, profile data, engagement and other variables
+- Facebook & Google audience sync 
+- Drag & drop email content editor
+- Product Recommender, including Personalized Product Recommendations
 - Product Picker
 - Campaign Booster
 - A/B testing
 - Discount Coupons
-- Full reports on your performance and generated sales
-- Flexible email templates and [many more smart features](https://www.omnisend.com/features)
+- Sales dashboard and advanced performance reporting
+- Email templates and many more smart features
+
 
 ## Compatibility
 
