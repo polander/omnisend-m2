@@ -92,7 +92,7 @@ class PushNotificationsObserver implements ObserverInterface
 
                 $streamRoot = $rootDirectory->openFile($path, 'w+');
                 $streamRoot->lock();
-                $fileData = 'importScripts("https://omnisrc.com/inshop/service-worker.js");';
+                $fileData = 'importScripts("https://omnisnippet1.com/inshop/service-worker.js");';
                 $streamRoot->write($fileData);
                 $streamRoot->unlock();
                 $streamRoot->close();
