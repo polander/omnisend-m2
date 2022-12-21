@@ -12,7 +12,6 @@ class CookieHelper
 {
     const COOKIE_OMNISEND_EMAIL_ID = 'omnisendEmailID';
     const COOKIE_OMNISEND_CONTACT_ID = 'omnisendContactID';
-    const COOKIE_OMNISEND_ANONYMOUS_ID = 'omnisendAnonymousID';
     const COOKIE_LIFETIME_OMNISEND_CONTACT_ID = 2592000;
     const COOKIE_OMNISEND_REDIRECT = 'omnisendRedirect';
     const COOKIE_DURATION = 3600;
@@ -69,14 +68,6 @@ class CookieHelper
     public function getOmnisendContactId()
     {
         return $this->cookieManager->getCookie(self::COOKIE_OMNISEND_CONTACT_ID);
-    }
-
-    /**
-     * @return null|string
-     */
-    public function getAnonymousContactId()
-    {
-        return $this->cookieManager->getCookie(self::COOKIE_OMNISEND_ANONYMOUS_ID);
     }
 
     /**
