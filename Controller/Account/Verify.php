@@ -127,10 +127,10 @@ class Verify extends Action
             $this->serializer->serialize([
                 'success' => true,
                 'systemInfo' => [
-                    self::PLATFORM => $this->_info[self::PLATFORM],
-                    self::PLATFORM_VERSION => $this->_info[self::PLATFORM_VERSION],
-                    self::PHP_VERSION => $this->_info[self::PHP_VERSION],
-                    self::PLUGIN_VERSION => $this->_info[self::PLUGIN_VERSION],
+                    self::PLATFORM => $this->_info[self::PLATFORM] ?? null,
+                    self::PLATFORM_VERSION => $this->_info[self::PLATFORM_VERSION] ?? null,
+                    self::PHP_VERSION => $this->_info[self::PHP_VERSION] ?? null,
+                    self::PLUGIN_VERSION => $this->_info[self::PLUGIN_VERSION] ?? null,
                 ],
             ])
         );
