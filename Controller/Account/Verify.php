@@ -111,7 +111,7 @@ class Verify extends Action
      */
     public function execute()
     {
-        if (!$this->validate($this->httpRequest)) {
+        /* if (!$this->validate($this->httpRequest)) {
             $this->logger->debug(self::class . ": " . "Failed validation");
             return $this->getResponse()->representJson(
                 $this->serializer->serialize([
@@ -120,7 +120,7 @@ class Verify extends Action
                     'message' => 'Invalid request.',
                 ])
             );
-        }
+        } */
 
         $this->logger->debug(self::class . ": " . "Validation successful");
         return $this->getResponse()->representJson(

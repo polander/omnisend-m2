@@ -319,7 +319,6 @@ class UpgradeData implements UpgradeDataInterface
 
     protected function setDefaultIsImportedValuesForExistingCategories(ModuleDataSetupInterface $setup)
     {
-        $existingCategoryIds = $this->categoryCollection->getAllIds();
         $isImportedAttributeId = $this->eavAttribute->getIdByCode(Category::ENTITY, InstallData::IS_IMPORTED);
 
         if (empty($existingCategoryIds)) {
@@ -328,8 +327,17 @@ class UpgradeData implements UpgradeDataInterface
 
         $connection = $setup->getConnection();
         $tableName = $setup->getTable('catalog_category_entity_int');
-        $columnName = 'entity_id';
-        $fkColumnName = $connection->tableColumnExists($tableName, $columnName) ? $columnName : 'row_id';
+        $hasRowId = $connection->tableColumnExists($tableName, 'row_id');
+        $fkColumnName = $hasRowId ? 'row_id' : 'entity_id';
+        $existingCategoryIds = [];
+
+        if ($hasRowId) {
+            $existingCategoryIds = $this->categoryCollection
+                ->addFieldToSelect('row_id')
+                ->getColumnValues('row_id');
+        } else {
+            $existingCategoryIds = $this->categoryCollection->getAllIds();
+        }
 
         $data = [];
 

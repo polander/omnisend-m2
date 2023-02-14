@@ -216,4 +216,12 @@
     <type name="Magento\Customer\Model\AccountManagement">
         <plugin name="accountManagementPlugin" type="Omnisend\Omnisend\Plugin\AccountManagementPlugin"/>
     </type>
+
+    <virtualType name="ScandiPWA\Router\Controller\ConfigurableRouter">
+        <arguments>
+            <argument name="ignoredURLs" xsi:type="array">
+                <item name="omnisendEndpoint" xsi:type="string">^/omnisend/.*</item>
+            </argument>
+        </arguments>
+    </virtualType>
 </config>
