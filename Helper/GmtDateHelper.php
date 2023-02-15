@@ -12,7 +12,7 @@ class GmtDateHelper
      * @param null $dateString
      * @return string
      */
-    public function getGmtDate($dateString = null)
+    public function getGmtDate($dateString = '')
     {
         $date = new DateTime($dateString);
 
